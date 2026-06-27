@@ -18,7 +18,9 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/api/rooms",
                                 "/api/rooms/**",
-                                "/api/room-types"
+                                "/api/room-types",
+                                "/api/bookings",
+                                "/actuator/health"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
